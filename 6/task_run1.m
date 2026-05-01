@@ -27,6 +27,9 @@ simTime = 20;        % seconds
 
 results = [];
 
+assignin("base", "Id_ref", 0);
+assignin("base", "Iq_ref", 0);
+
 fprintf("omega_rad_s\t rpm\t\t f_Hz\t\t Iq_avg_tail\t OK\n");
 
 for omega = omega_start:omega_step:omega_stop
