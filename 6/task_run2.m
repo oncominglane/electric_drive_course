@@ -21,7 +21,7 @@ p = 3;
 omega = 750 * 2*pi / 60;   % 750 об/мин = 78.54 рад/с
 
 % диапазоны токов
-Id_start = 0;
+Id_start = -170;
 Id_stop  = -500;
 Id_step  = -10;
 
@@ -30,7 +30,7 @@ Iq_stop  = 1300;
 Iq_step  = 5;
 
 current_error_limit = 0.05;   % A
-simTime = 10;                 % seconds
+simTime = 5;                 % seconds
 
 assignin("base", "omega", omega);
 
